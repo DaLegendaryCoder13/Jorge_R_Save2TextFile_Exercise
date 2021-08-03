@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Text_File" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Deku pic.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="hha-e6-27a">
+                                <rect key="frame" x="0.0" y="272" width="414" height="352"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="D3g-nH-dkL">
+                                <rect key="frame" x="101" y="102" width="210" height="113"/>
+                                <color key="backgroundColor" red="0.43461871260000001" green="0.78003057070000004" blue="0.65274947679999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rhn-8Y-P61">
+                                <rect key="frame" x="101" y="684" width="226" height="106"/>
+                                <color key="backgroundColor" red="0.43461871260000001" green="0.78003057070000004" blue="0.65274947679999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="FNc-Hl-Hnz"/>
+                                </constraints>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqR-fj-PpS">
+                                <rect key="frame" x="46" y="44" width="69" height="30"/>
+                                <state key="normal" title="Write Text"/>
+                                <connections>
+                                    <action selector="writeMyText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPn-U7-o7c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uI-d8-zga">
+                                <rect key="frame" x="306" y="44" width="68" height="30"/>
+                                <state key="normal" title="Read Text"/>
+                                <connections>
+                                    <action selector="readMyText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfy-Sv-Kad"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.43461871264592605" green="0.78003057069385173" blue="0.65274947681335327" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hha-e6-27a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4Lj-mV-pP3"/>
+                            <constraint firstItem="Rhn-8Y-P61" firstAttribute="top" secondItem="hha-e6-27a" secondAttribute="bottom" constant="60" id="6WV-de-zhi"/>
+                            <constraint firstItem="D3g-nH-dkL" firstAttribute="top" secondItem="EqR-fj-PpS" secondAttribute="bottom" constant="28" id="Drv-HX-jXS"/>
+                            <constraint firstItem="D3g-nH-dkL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="FJ5-da-plv"/>
+                            <constraint firstItem="D3g-nH-dkL" firstAttribute="leading" secondItem="Rhn-8Y-P61" secondAttribute="leading" id="RIu-kP-os4"/>
+                            <constraint firstItem="hha-e6-27a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="STi-Xc-hEG"/>
+                            <constraint firstItem="EqR-fj-PpS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="WI0-D6-qzU"/>
+                            <constraint firstItem="EqR-fj-PpS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YRN-HE-lAE"/>
+                            <constraint firstItem="EqR-fj-PpS" firstAttribute="baseline" secondItem="4uI-d8-zga" secondAttribute="baseline" id="dko-NX-fI4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4uI-d8-zga" secondAttribute="trailing" constant="40" id="fwR-UK-9UX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D3g-nH-dkL" secondAttribute="trailing" constant="103" id="hFS-fF-cIv"/>
+                            <constraint firstItem="hha-e6-27a" firstAttribute="top" secondItem="D3g-nH-dkL" secondAttribute="bottom" constant="57" id="nva-Yl-PMd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rhn-8Y-P61" secondAttribute="bottom" constant="72" id="tok-PT-aZR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rhn-8Y-P61" secondAttribute="trailing" constant="87" id="uoU-w0-SyP"/>
+                            <constraint firstItem="hha-e6-27a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xRz-Im-JfK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayTextHere" destination="Rhn-8Y-P61" id="eGf-D7-qlk"/>
+                        <outlet property="typeTextHere" destination="D3g-nH-dkL" id="WfJ-1h-Exs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Deku pic.jpeg" width="589.5" height="752.25"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
